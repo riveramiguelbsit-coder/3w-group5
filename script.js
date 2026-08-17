@@ -1,21 +1,21 @@
 const members = [
     {
         name: "Miguel Rivera",
-        img: "miguel.jpg",
+        img: "miguel.png",
         role: "Group Leader",
         bio: "Leads the group meetings, divides the tasks among members, and ensures the project is submitted on time.",
         skills: ["Leadership", "Time Management", "Task Delegation"]
     },
     {
         name: "Annaliza",
-        img: "annaliza.jpg",
+        img: "analiza.jpg",
         role: "Layout Designer",
         bio: "In charge of the website's wireframes, visual structure, and choosing the right color schemes for the project.",
         skills: ["Canva", "UI Layouting", "Creativity"]
     },
     {
         name: "Maria Madonna",
-        img: "ma madonna.jpg",
+        img: "madonna.jpg",
         role: "Web Programmer",
         bio: "Writes the core HTML and CSS code to bring the design to life and make the website functional.",
         skills: ["HTML/CSS", "Basic JavaScript", "Debugging"]
@@ -29,14 +29,14 @@ const members = [
     },
     {
         name: "Nikka Joy",
-        img: "nikka joy.jpg",
+        img: "nikka.jpg",
         role: "Researcher & Documenter",
         bio: "Gathers reference materials, writes the project documentation, and drafts the required written reports.",
         skills: ["Research", "Technical Writing", "Formatting"]
     },
     {
         name: "Amerie Mae",
-        img: "ameriemae.jpg",
+        img: "anamarie.jpg",
         role: "System Analyst",
         bio: "Plans the logic of the program, creates the flowcharts, and maps out how the system will work before coding.",
         skills: ["Logic Building", "Flowcharting", "Problem Solving"]
