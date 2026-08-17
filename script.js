@@ -15,7 +15,7 @@ const members = [
     },
     {
         name: "Maria Madonna",
-        img: "madonna.jpg",
+        img: "madona.jpg",
         role: "Web Programmer",
         bio: "Writes the core HTML and CSS code to bring the design to life and make the website functional.",
         skills: ["HTML/CSS", "Basic JavaScript", "Debugging"]
