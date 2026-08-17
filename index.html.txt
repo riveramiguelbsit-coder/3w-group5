@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Team Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>3W Group 5</h1>
+        <p>Meet the amazing people behind our project</p>
+    </header>
+
+    <div class="team-container">
+
+        <div class="team-card" onclick="openModal(0)">
+            <img src="miguel.jpg" alt="Miguel Rivera">
+            <h3>Miguel</h3>
+            <p class="role">Group Leader</p>
+            <a href="#" class="btn" onclick="event.stopPropagation(); openModal(0)">View Profile</a>
+        </div>
+
+        <div class="team-card" onclick="openModal(1)">
+            <img src="annaliza.jpg" alt="Annaliza">
+            <h3>Annaliza</h3>
+            <p class="role">Layout Designer</p>
+            <a href="#" class="btn" onclick="event.stopPropagation(); openModal(1)">View Profile</a>
+        </div>
+
+        <div class="team-card" onclick="openModal(2)">
+            <img src="ma madonna.jpg" alt="Ma Madonna">
+            <h3>Maria Madonna</h3>
+            <p class="role">Web Programmer</p>
+            <a href="#" class="btn" onclick="event.stopPropagation(); openModal(2)">View Profile</a>
+        </div>
+
+        <div class="team-card" onclick="openModal(3)">
+            <img src="margie.jpg" alt="Margie">
+            <h3>Margie</h3>
+            <p class="role">Quality Checker</p>
+            <a href="#" class="btn" onclick="event.stopPropagation(); openModal(3)">View Profile</a>
+        </div>
+
+        <div class="team-card" onclick="openModal(4)">
+            <img src="nikka joy.jpg" alt="Nikka Joy">
+            <h3>Nikka Joy</h3>
+            <p class="role">Researcher & Documenter</p>
+            <a href="#" class="btn" onclick="event.stopPropagation(); openModal(4)">View Profile</a>
+        </div>
+
+        <div class="team-card" onclick="openModal(5)">
+            <img src="ameriemae.jpg" alt="Amerie Mae">
+            <h3>Amerie</h3>
+            <p class="role">System Analyst</p>
+            <a href="#" class="btn" onclick="event.stopPropagation(); openModal(5)">View Profile</a>
+        </div>
+
+        <div class="team-card" onclick="openModal(6)">
+            <img src="yannie.jpg" alt="Yanie">
+            <h3>Yanilyn</h3>
+            <p class="role">Presenter</p>
+            <a href="#" class="btn" onclick="event.stopPropagation(); openModal(6)">View Profile</a>
+        </div>
+
+    </div>
+
+    <div class="modal" id="profileModal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()">&times;</button>
+            <img id="modalImg" src="" alt="">
+            <h2 id="modalName"></h2>
+            <div class="info-row">
+                <div class="label">Role</div>
+                <div class="value" id="modalRole"></div>
+            </div>
+            <div class="info-row">
+                <div class="label">Bio</div>
+                <div class="value" id="modalBio"></div>
+            </div>
+            <div class="info-row">
+                <div class="label">Skills</div>
+                <div class="skills" id="modalSkills"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
