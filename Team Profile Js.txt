@@ -1,0 +1,73 @@
+const members = [
+    {
+        name: "Miguel Rivera",
+        img: "miguel.jpg",
+        role: "Group Leader",
+        bio: "Leads the group meetings, divides the tasks among members, and ensures the project is submitted on time.",
+        skills: ["Leadership", "Time Management", "Task Delegation"]
+    },
+    {
+        name: "Annaliza",
+        img: "annaliza.jpg",
+        role: "Layout Designer",
+        bio: "In charge of the website's wireframes, visual structure, and choosing the right color schemes for the project.",
+        skills: ["Canva", "UI Layouting", "Creativity"]
+    },
+    {
+        name: "Maria Madonna",
+        img: "ma madonna.jpg",
+        role: "Web Programmer",
+        bio: "Writes the core HTML and CSS code to bring the design to life and make the website functional.",
+        skills: ["HTML/CSS", "Basic JavaScript", "Debugging"]
+    },
+    {
+        name: "Margie Si",
+        img: "margie.jpg",
+        role: "Quality Checker",
+        bio: "Tests the website on different devices, checks for typos, and makes sure all links and buttons work properly.",
+        skills: ["Proofreading", "Responsive Testing", "Attention to Detail"]
+    },
+    {
+        name: "Nikka Joy",
+        img: "nikka joy.jpg",
+        role: "Researcher & Documenter",
+        bio: "Gathers reference materials, writes the project documentation, and drafts the required written reports.",
+        skills: ["Research", "Technical Writing", "Formatting"]
+    },
+    {
+        name: "Amerie Mae",
+        img: "ameriemae.jpg",
+        role: "System Analyst",
+        bio: "Plans the logic of the program, creates the flowcharts, and maps out how the system will work before coding.",
+        skills: ["Logic Building", "Flowcharting", "Problem Solving"]
+    },
+    {
+        name: "Yanilyn",
+        img: "yannie.jpg",
+        role: "Presenter",
+        bio: "Creates the final presentation deck, edits the team's photos/assets, and acts as the main speaker during defenses.",
+        skills: ["Public Speaking", "Photo Editing", "Visual Arts"]
+    }
+];
+
+function openModal(index) {
+    const m = members[index];
+    document.getElementById('modalImg').src = m.img;
+    document.getElementById('modalImg').alt = m.name;
+    document.getElementById('modalName').textContent = m.name;
+    document.getElementById('modalRole').textContent = m.role;
+    document.getElementById('modalBio').textContent = m.bio;
+
+    const skillsContainer = document.getElementById('modalSkills');
+    skillsContainer.innerHTML = m.skills.map(s => `<span>${s}</span>`).join('');
+
+    document.getElementById('profileModal').classList.add('active');
+}
+
+function closeModal() {
+    document.getElementById('profileModal').classList.remove('active');
+}
+
+document.getElementById('profileModal').addEventListener('click', function (e) {
+    if (e.target === this) closeModal();
+});

@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111827;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+header {
+    padding: 50px 20px 30px;
+    background: #0f172a;
+    border-bottom: 3px solid #10b981;
+}
+
+header h1 {
+    color: #10b981;
+    font-size: 2rem;
+    margin: 0 0 6px;
+}
+
+header p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 20px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    width: 240px;
+    padding: 28px 20px 24px;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.team-card:hover {
+    border-color: #10b981;
+    transform: translateY(-4px);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #10b981;
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.team-card h3 {
+    color: #f9fafb;
+    font-size: 1rem;
+    margin: 0 0 4px;
+}
+
+.team-card .role {
+    color: #10b981;
+    font-size: 0.82rem;
+    margin-bottom: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 18px;
+    background: #10b981;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #059669;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    position: relative;
+    text-align: left;
+}
+
+.modal-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #10b981;
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #f9fafb;
+    font-size: 1.15rem;
+    margin: 0 0 16px;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    color: #9ca3af;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
+}
+
+.info-row {
+    margin-bottom: 12px;
+}
+
+.info-row .label {
+    color: #10b981;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.info-row .value {
+    color: #d1d5db;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.skills span {
+    padding: 3px 10px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    border-radius: 20px;
+    color: #10b981;
+    font-size: 0.78rem;
+}
+
+/* Phone View */
+@media (max-width: 600px) {
+    header {
+        padding: 36px 16px 22px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.85rem;
+    }
+
+    .team-container {
+        padding: 28px 12px 48px;
+        gap: 16px;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 300px;
+        padding: 22px 16px 20px;
+    }
+
+    .team-card img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .team-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 7px 14px;
+        font-size: 0.8rem;
+    }
+
+    .modal-content {
+        width: 94%;
+        padding: 24px 18px;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+
+    .modal-content img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.05rem;
+        margin-bottom: 14px;
+    }
+
+    .close {
+        top: 10px;
+        right: 12px;
+        font-size: 1.2rem;
+    }
+
+    .info-row .value {
+        font-size: 0.85rem;
+    }
+
+    .skills span {
+        font-size: 0.72rem;
+        padding: 2px 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .team-card {
+        padding: 18px 12px 16px;
+    }
+
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .modal-content {
+        padding: 20px 14px;
+    }
+
+    .modal-content img {
+        width: 68px;
+        height: 68px;
+    }
+}
