@@ -139,6 +139,14 @@ if (isset($_GET["member"])) {
 
     </a>
 
+    <a
+    href="delete_member.php?member=<?php echo $memberIndex; ?>"
+    class="btn"
+    onclick="return confirm('Are you sure you want to delete this member?');"
+>
+    Delete Member
+</a>
+
 </div>
 
 
