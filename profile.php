@@ -134,23 +134,31 @@ if (isset($_GET["member"])) {
     <!-- Back Button -->
 
     <a href="index.php" class="btn">
-
-        ← Back to Team
-
-    </a>
-
-    <a
-    href="delete_member.php?member=<?php echo $memberIndex; ?>"
-    class="btn"
-    onclick="return confirm('Are you sure you want to delete this member?');"
->
-    Delete Member
+    ← Back to Team
 </a>
 
-</div>
 
+<!-- Delete Button -->
 
-</body>
+<?php
 
-</html>
+if (
+    isset($member["deletable"]) &&
+    $member["deletable"] === true
+) {
 
+?>
+
+    <a
+        href="delete_member.php?member=<?php echo $memberIndex; ?>"
+        class="btn"
+        onclick="return confirm('Are you sure you want to delete this member?');"
+    >
+        Delete Member
+    </a>
+
+<?php
+
+}
+
+?>

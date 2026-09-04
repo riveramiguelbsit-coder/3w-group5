@@ -93,8 +93,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 "bio" => $bio,
 
-                "skills" => $skills
-
+                "skills" => $skills,
+               
+                "deletable" => true
             ];
 
 

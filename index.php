@@ -36,14 +36,6 @@ $teamMembers = json_decode(
 
 </header>
 
-<div style="margin: 20px;">
-
-    <a href="add_member.php" class="btn">
-        + Add New Member
-    </a>
-
-</div>
-
 <!-- TEAM MEMBERS -->
 
 <div class="team-container">
@@ -81,6 +73,13 @@ $teamMembers = json_decode(
 
 </div>
 
+<div style="margin: 20px;">
+
+    <a href="add_member.php" class="btn">
+        + Add New Member
+    </a>
+
+</div>
 
 <!-- POST METHOD -->
 

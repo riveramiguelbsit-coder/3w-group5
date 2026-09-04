@@ -4,48 +4,55 @@
         "role": "Group Leader",
         "image": "miguel.png",
         "bio": "Miguel is responsible for leading the group, coordinating tasks, and managing the project.",
-        "skills": "Leadership, Programming, Planning, Communication"
+        "skills": "Leadership, Programming, Planning, Communication",
+        "deletable": false
     },
     {
         "name": "Annaliza",
         "role": "Layout Designer",
         "image": "analiza.jpg",
         "bio": "Annaliza creates the visual layout and makes the website attractive and user-friendly.",
-        "skills": "UI Design, Layout, Creativity, CSS"
+        "skills": "UI Design, Layout, Creativity, CSS",
+        "deletable": false
     },
     {
         "name": "Maria Madonna",
         "role": "Web Programmer",
         "image": "madona.jpg",
         "bio": "Maria Madonna develops the website and implements its features.",
-        "skills": "HTML, CSS, JavaScript, PHP"
+        "skills": "HTML, CSS, JavaScript, PHP",
+        "deletable": false
     },
     {
         "name": "Margie",
         "role": "Quality Checker",
         "image": "margie.jpg",
         "bio": "Margie checks the website for errors and ensures that the project works properly.",
-        "skills": "Testing, Debugging, Documentation"
+        "skills": "Testing, Debugging, Documentation",
+        "deletable": false
     },
     {
         "name": "Nikka Joy",
         "role": "Researcher & Documenter",
         "image": "nikka.jpg",
         "bio": "Nikka Joy conducts research and prepares project documents.",
-        "skills": "Research, Writing, Documentation"
+        "skills": "Research, Writing, Documentation",
+        "deletable": false
     },
     {
         "name": "Amerie",
         "role": "System Analyst",
         "image": "anamarie.jpg",
         "bio": "Amerie analyzes system requirements and helps identify project features.",
-        "skills": "System Analysis, Problem Solving, Planning"
+        "skills": "System Analysis, Problem Solving, Planning",
+        "deletable": false
     },
     {
         "name": "Yanilyn",
         "role": "Presenter",
         "image": "yannie.jpg",
         "bio": "Yanilyn presents the project and explains its features and objectives.",
-        "skills": "Presentation, Communication, Public Speaking"
+        "skills": "Presentation, Communication, Public Speaking",
+        "deletable": false
     }
 ]
