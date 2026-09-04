@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Miguel Rivera",
+        "role": "Group Leader",
+        "image": "miguel.png",
+        "bio": "Miguel is responsible for leading the group, coordinating tasks, and managing the project.",
+        "skills": "Leadership, Programming, Planning, Communication"
+    },
+    {
+        "name": "Annaliza",
+        "role": "Layout Designer",
+        "image": "analiza.jpg",
+        "bio": "Annaliza creates the visual layout and makes the website attractive and user-friendly.",
+        "skills": "UI Design, Layout, Creativity, CSS"
+    },
+    {
+        "name": "Maria Madonna",
+        "role": "Web Programmer",
+        "image": "madona.jpg",
+        "bio": "Maria Madonna develops the website and implements its features.",
+        "skills": "HTML, CSS, JavaScript, PHP"
+    },
+    {
+        "name": "Margie",
+        "role": "Quality Checker",
+        "image": "margie.jpg",
+        "bio": "Margie checks the website for errors and ensures that the project works properly.",
+        "skills": "Testing, Debugging, Documentation"
+    },
+    {
+        "name": "Nikka Joy",
+        "role": "Researcher & Documenter",
+        "image": "nikka.jpg",
+        "bio": "Nikka Joy conducts research and prepares project documents.",
+        "skills": "Research, Writing, Documentation"
+    },
+    {
+        "name": "Amerie",
+        "role": "System Analyst",
+        "image": "anamarie.jpg",
+        "bio": "Amerie analyzes system requirements and helps identify project features.",
+        "skills": "System Analysis, Problem Solving, Planning"
+    },
+    {
+        "name": "Yanilyn",
+        "role": "Presenter",
+        "image": "yannie.jpg",
+        "bio": "Yanilyn presents the project and explains its features and objectives.",
+        "skills": "Presentation, Communication, Public Speaking"
+    },
+    {
+        "name": "dexter",
+        "role": "Group member",
+        "image": "uploads\/1788511616_dexter.jpg",
+        "bio": "36\/34\/36",
+        "skills": "coding"
+    }
+]

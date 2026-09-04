@@ -1,3 +1,8 @@
+
+/* ================================
+   GENERAL
+================================ */
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -5,6 +10,11 @@ body {
     color: #e5e7eb;
     text-align: center;
 }
+
+
+/* ================================
+   HEADER
+================================ */
 
 header {
     padding: 50px 20px 30px;
@@ -22,6 +32,11 @@ header p {
     color: #9ca3af;
     font-size: 0.95rem;
 }
+
+
+/* ================================
+   TEAM CARDS
+================================ */
 
 .team-container {
     display: flex;
@@ -70,6 +85,11 @@ header p {
     margin-bottom: 14px;
 }
 
+
+/* ================================
+   VIEW PROFILE BUTTON
+================================ */
+
 .btn {
     display: inline-block;
     padding: 7px 18px;
@@ -80,11 +100,193 @@ header p {
     text-decoration: none;
     font-weight: 600;
     cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
 }
 
 .btn:hover {
     background: #059669;
+    transform: translateY(-1px);
 }
+
+
+/* ================================
+   PHP GET PROFILE
+================================ */
+
+.profile {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile:hover {
+    border-color: #10b981;
+}
+
+.profile h2 {
+    color: #10b981;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #10b981;
+    margin-bottom: 20px;
+}
+
+.profile p {
+    text-align: left;
+    color: #d1d5db;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.profile strong {
+    color: #10b981;
+}
+
+
+/* ================================
+   CONTACT / POST FORM
+================================ */
+
+.contact {
+    background: #0f172a;
+    border-top: 2px solid #374151;
+    padding: 40px 20px 60px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    color: #10b981;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+
+/* Form */
+
+.contact form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* Labels */
+
+.contact label {
+    display: block;
+    color: #d1d5db;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+
+/* Inputs */
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    background: #1f2937;
+    color: #f9fafb;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+/* Input focus */
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.12);
+}
+
+
+/* Placeholder */
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #6b7280;
+}
+
+
+/* Textarea */
+
+.contact textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+/* Submit button */
+
+.contact button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px 20px;
+    background: #10b981;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.contact button:hover {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   POST SUCCESS MESSAGE
+================================ */
+
+.success {
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    padding: 12px 15px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    border-radius: 6px;
+    color: #10b981;
+    font-size: 0.9rem;
+}
+
+
+/* ================================
+   JAVASCRIPT MODAL
+================================ */
 
 .modal {
     display: none;
@@ -102,6 +304,10 @@ header p {
 .modal.active {
     display: flex;
 }
+
+
+/* Modal Content */
+
 .modal-content {
     background: #1f2937;
     border: 1px solid #374151;
@@ -111,7 +317,12 @@ header p {
     padding: 30px;
     position: relative;
     text-align: left;
+    box-sizing: border-box;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
+
+
+/* Modal Image */
 
 .modal-content img {
     width: 100px;
@@ -123,12 +334,18 @@ header p {
     margin: 0 auto 14px;
 }
 
+
+/* Modal Name */
+
 .modal-content h2 {
     text-align: center;
     color: #f9fafb;
     font-size: 1.15rem;
     margin: 0 0 16px;
 }
+
+
+/* Close Button */
 
 .close {
     position: absolute;
@@ -144,6 +361,11 @@ header p {
 .close:hover {
     color: #fff;
 }
+
+
+/* ================================
+   MODAL INFORMATION
+================================ */
 
 .info-row {
     margin-bottom: 12px;
@@ -163,6 +385,11 @@ header p {
     line-height: 1.5;
 }
 
+
+/* ================================
+   SKILLS
+================================ */
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -179,8 +406,13 @@ header p {
     font-size: 0.78rem;
 }
 
-/* Phone View */
+
+/* ================================
+   PHONE VIEW
+================================ */
+
 @media (max-width: 600px) {
+
     header {
         padding: 36px 16px 22px;
     }
@@ -218,6 +450,44 @@ header p {
         font-size: 0.8rem;
     }
 
+    /* GET Profile */
+
+    .profile {
+        width: 94%;
+        padding: 24px 18px;
+        margin-bottom: 35px;
+    }
+
+    .profile img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile h2 {
+        font-size: 1.2rem;
+    }
+
+    /* POST Form */
+
+    .contact {
+        padding: 32px 14px 45px;
+    }
+
+    .contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact form {
+        width: 94%;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 0.85rem;
+    }
+
+    /* Modal */
+
     .modal-content {
         width: 94%;
         padding: 24px 18px;
@@ -251,7 +521,13 @@ header p {
     }
 }
 
+
+/* ================================
+   SMALL PHONE VIEW
+================================ */
+
 @media (max-width: 360px) {
+
     header h1 {
         font-size: 1.3rem;
     }
@@ -265,6 +541,19 @@ header p {
         height: 80px;
     }
 
+    .profile {
+        padding: 20px 14px;
+    }
+
+    .profile img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
     .modal-content {
         padding: 20px 14px;
     }
@@ -274,3 +563,4 @@ header p {
         height: 68px;
     }
 }
+

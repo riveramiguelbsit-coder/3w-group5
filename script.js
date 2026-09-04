@@ -1,73 +1,156 @@
-const members = [
+
+// ================================
+// TEAM MEMBER INFORMATION
+// ================================
+
+const teamMembers = [
     {
         name: "Miguel Rivera",
-        img: "miguel.png",
+        image: "miguel.png",
         role: "Group Leader",
-        bio: "Leads the group meetings, divides the tasks among members, and ensures the project is submitted on time.",
-        skills: ["Leadership", "Time Management", "Task Delegation"]
+        bio: "Miguel is responsible for leading the group, coordinating tasks, and managing the project.",
+        skills: ["Leadership", "Programming", "Planning", "Communication"]
     },
+
     {
         name: "Annaliza",
-        img: "analiza.jpg",
+        image: "analiza.jpg",
         role: "Layout Designer",
-        bio: "In charge of the website's wireframes, visual structure, and choosing the right color schemes for the project.",
-        skills: ["Canva", "UI Layouting", "Creativity"]
+        bio: "Annaliza creates the visual layout and makes the website attractive and user-friendly.",
+        skills: ["UI Design", "Layout", "Creativity", "CSS"]
     },
+
     {
         name: "Maria Madonna",
-        img: "madona.jpg",
+        image: "madona.jpg",
         role: "Web Programmer",
-        bio: "Writes the core HTML and CSS code to bring the design to life and make the website functional.",
-        skills: ["HTML/CSS", "Basic JavaScript", "Debugging"]
+        bio: "Maria Madonna develops the website and implements its features.",
+        skills: ["HTML", "CSS", "JavaScript", "PHP"]
     },
+
     {
-        name: "Margie Si",
-        img: "margie.jpg",
+        name: "Margie",
+        image: "margie.jpg",
         role: "Quality Checker",
-        bio: "Tests the website on different devices, checks for typos, and makes sure all links and buttons work properly.",
-        skills: ["Proofreading", "Responsive Testing", "Attention to Detail"]
+        bio: "Margie checks the website for errors and ensures that the project works properly.",
+        skills: ["Testing", "Debugging", "Documentation"]
     },
+
     {
         name: "Nikka Joy",
-        img: "nikka.jpg",
+        image: "nikka.jpg",
         role: "Researcher & Documenter",
-        bio: "Gathers reference materials, writes the project documentation, and drafts the required written reports.",
-        skills: ["Research", "Technical Writing", "Formatting"]
+        bio: "Nikka Joy conducts research and prepares project documents.",
+        skills: ["Research", "Writing", "Documentation"]
     },
+
     {
-        name: "Amerie Mae",
-        img: "anamarie.jpg",
+        name: "Amerie",
+        image: "anamarie.jpg",
         role: "System Analyst",
-        bio: "Plans the logic of the program, creates the flowcharts, and maps out how the system will work before coding.",
-        skills: ["Logic Building", "Flowcharting", "Problem Solving"]
+        bio: "Amerie analyzes system requirements and helps identify project features.",
+        skills: ["System Analysis", "Problem Solving", "Planning"]
     },
+
     {
         name: "Yanilyn",
-        img: "yannie.jpg",
+        image: "yannie.jpg",
         role: "Presenter",
-        bio: "Creates the final presentation deck, edits the team's photos/assets, and acts as the main speaker during defenses.",
-        skills: ["Public Speaking", "Photo Editing", "Visual Arts"]
+        bio: "Yanilyn presents the project and explains its features and objectives.",
+        skills: ["Presentation", "Communication", "Public Speaking"]
     }
 ];
 
+
+// ================================
+// OPEN MODAL
+// ================================
+
 function openModal(index) {
-    const m = members[index];
-    document.getElementById('modalImg').src = m.img;
-    document.getElementById('modalImg').alt = m.name;
-    document.getElementById('modalName').textContent = m.name;
-    document.getElementById('modalRole').textContent = m.role;
-    document.getElementById('modalBio').textContent = m.bio;
 
-    const skillsContainer = document.getElementById('modalSkills');
-    skillsContainer.innerHTML = m.skills.map(s => `<span>${s}</span>`).join('');
+    const member = teamMembers[index];
 
-    document.getElementById('profileModal').classList.add('active');
+    document.getElementById("modalImg").src = member.image;
+
+    document.getElementById("modalImg").alt = member.name;
+
+    document.getElementById("modalName").textContent = member.name;
+
+    document.getElementById("modalRole").textContent = member.role;
+
+    document.getElementById("modalBio").textContent = member.bio;
+
+
+    // Display skills
+
+    const skillsContainer =
+        document.getElementById("modalSkills");
+
+    skillsContainer.innerHTML = "";
+
+
+    member.skills.forEach(function(skill) {
+
+        const skillElement =
+            document.createElement("span");
+
+        skillElement.textContent = skill;
+
+        skillsContainer.appendChild(skillElement);
+
+    });
+
+
+    // IMPORTANT:
+    // Your CSS uses .modal.active
+
+    document
+        .getElementById("profileModal")
+        .classList.add("active");
 }
+
+
+// ================================
+// CLOSE MODAL
+// ================================
 
 function closeModal() {
-    document.getElementById('profileModal').classList.remove('active');
+
+    document
+        .getElementById("profileModal")
+        .classList.remove("active");
 }
 
-document.getElementById('profileModal').addEventListener('click', function (e) {
-    if (e.target === this) closeModal();
+
+// ================================
+// CLOSE WHEN CLICKING OUTSIDE
+// ================================
+
+window.addEventListener("click", function(event) {
+
+    const modal =
+        document.getElementById("profileModal");
+
+    if (event.target === modal) {
+
+        closeModal();
+
+    }
+
 });
+
+
+// ================================
+// CLOSE WITH ESC KEY
+// ================================
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeModal();
+
+    }
+
+});
+
