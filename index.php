@@ -36,7 +36,7 @@ $teamMembers = json_decode(
 
 </header>
 
-<!-- TEAM MEMBERS -->
+
 
 <div class="team-container">
 

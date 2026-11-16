@@ -54,5 +54,21 @@
         "bio": "Yanilyn presents the project and explains its features and objectives.",
         "skills": "Presentation, Communication, Public Speaking",
         "deletable": false
+    },
+    {
+        "name": "MARK ANDREW REYES",
+        "role": "ADDITIONAL LAYOUT DESIGNER\/CODER",
+        "image": "uploads\/1794839211_MARK_ANDREW_REYES.png",
+        "bio": "UI\/UX Planning & Wireframe",
+        "skills": "JAVA, ANDROID STUDIO",
+        "deletable": true
+    },
+    {
+        "name": "NIKKI T. RAMOBOYONG",
+        "role": "Additional System Analyst",
+        "image": "uploads\/1794839322_NIKKI_T__RAMOBOYONG.png",
+        "bio": "Requirement Gathering & Analysis, System Design & Flow",
+        "skills": "JAVA, ANDROID STUDIO, VISIUAL STUDIO",
+        "deletable": true
     }
 ]
